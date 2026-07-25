@@ -80,7 +80,7 @@ void ParallelMergeSort::recursiveSort(int left , int right){
     }
 
     // Copy merged result back to original array
-    for (int k = 0; k < result.size(); k++) {
+    for (size_t k = 0; k < result.size(); k++) {
         (*nums)[left + k] = result[k];
     }
 
